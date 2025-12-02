@@ -19,16 +19,18 @@ u0=[data[1],-0.03500839] #y(0) will be replaced optimized values
 #define model with scaling symmetry 
 @variables x(t) y(t)
 @parameters B104 B106 B108 B109 B204 B205 l
-eqs = [D(x) ~ B104*x*x+B106*x*x*x+B108*x*(-y+0.1)+B109*x*x*(-y+0.1)+l 
-D(y) ~ -B204*x*x-B205*(-y+0.1)*(-y+0.1)]
+eqs = [D(x) ~ B104*x*x+B106*x*x*x+B108*x*(-y)+B109*x*x*(-y)+l 
+D(y) ~ -B204*x*x-B205*(-y)*(-y)]
 
 @mtkbuild ags_sys = ODESystem(eqs,t)
 
 fits = Matrix(CSV.read("6A_info.csv",DataFrame,header=false)) #read in optimized parameters 
 r = fits[argmin(fits[:,3]),4+1:4+tot_num_param] #pick set with lowest cost function value
 
+#print(r)
+
 #build and solve ODEProblem 
-_ags_sys = ODEProblem(ags_sys,[x => u0[1], y => -r[7]+0.1], tspan, [B104 => r[1] B106 => r[2] B108=> r[3] B109=> 9.999995000000000 B204 => r[4] B205 => r[5] l=>r[6]])
+_ags_sys = ODEProblem(ags_sys,[x => u0[1], y => -r[7]], tspan, [B104 => r[1] B106 => r[2] B108=> r[3] B109=> 9.999995000000000 B204 => r[4] B205 => r[5] l=>r[6]])
 ags_sol = solve(_ags_sys, saveat=SaveTimes)
 ags_sol_rs = reduce(hcat, ags_sol.u) #reshape
 

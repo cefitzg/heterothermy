@@ -27,8 +27,8 @@ set(gca,'FontSize',fs)
 set(gcf,'units','pixels','outerposition',figpos,'windowstyle','normal')
 set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
-ax=gca;
-exportgraphics(ax,'h1.tif','Resolution',1000) 
+%ax=gca;
+%exportgraphics(ax,'h1.tif','Resolution',1000) 
 
 figure(2)
 plot(x,0.2*(tanh(0.005*(x-3500)))+0.79,'LineWidth',7,'Color','#ffb000')
@@ -46,8 +46,8 @@ set(gca,'FontSize',fs)
 set(gcf,'units','pixels','outerposition',figpos,'windowstyle','normal')
 set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
-ax=gca;
-exportgraphics(ax,'h2.tif','Resolution',1000) 
+%ax=gca;
+%exportgraphics(ax,'h2.tif','Resolution',1000) 
 
 %plot the dynamics here instead of in julia 
 
