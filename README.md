@@ -41,6 +41,12 @@ This project utilizes several, somewhat involved bases written by myself, Andrew
 	* Forward simulations of the qualitative models describing the dynamics of the shrew, noisy miner, and the black bear seen in Figure 5D. Note: in review we changed Figure 5D and 5E to be the same as Figure 4B and 4C. 
 * scaling_symmetry_6 folder 
 	* Code for simulating Model 6 with change of variables $\tilde{y}=-y$ seen in Figure 3C (bottom). 
+* Chaetev_Theorem_Calculation 
+	* **!To do!**
+* Nondimensionalization 
+	* Contains maple scripts for the nondimensionalizations used in the paper. 
+
+## Computational requirements and notes. 
+
 * Project.toml 
 	**!To do!** Install needed Julia dependencies
-* Chaetev_Theorem_Calculation 
