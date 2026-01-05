@@ -1,6 +1,25 @@
 # "Discovering universal temperature regulation dynamics in animals" https://arxiv.org/abs/2504.00359 code base
 
-## matlab scripts for each figure in the main text and supplemental figures in folders fig1, fig2, fig3, fig4, fig5 and supp_figs. 
+## ai_files
+* contains .ai files (and pdf versions) of figures in the main text. 
+
+## fig1
+* contains matlab scripts to reproduce panels in Figure 1 in the main text. 
+
+## fig2 
+* contains matlab scripts to reproduce panels in Figure 2 in the main text.
+
+## fig3 
+* contains matlab scripts to reproduce panels in Figure 3 in the main text.
+
+## fig4 
+* contains matlab scripts to reproduce panels in Figure 4 in the main text.
+
+## fig5 
+* contains matlab scripts to reproduce panels in Figure 5 in the main text.
+
+## supp_figs
+* contains matlab scripts to reproduce supplementary figures. 
 
 ## code includes: 
 * data scaling script for training and validation, 
