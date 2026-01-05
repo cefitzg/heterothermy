@@ -22,6 +22,8 @@
 * contains matlab scripts to reproduce supplementary figures. 
 
 ## code directory includes: 
+* Project.toml 
+	!To do! julia dependencies. 
 * DAHSI_Dockerfile folder 
 	* Contains dockerized version of "DAHSI" sparse model selection algorithm, as described here: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714.
 	* Dockerfiles also hosted here: https://github.com/nuitrcs/quest_software_dockerfiles/tree/main/DAHSI.
@@ -33,6 +35,6 @@
 * parameter_estimation_6 folder 
 	* sample parameter estimation of Model 6. 
 * qual_models folder 
-	* Forward simulations of the qualitative models describing the dynamics of the shrew, noisy miner, and the black bear seen in Figure 5D. Note: in review we changed the qualitative dynamics of the Arctic ground squirrel to be the same as Figure 4. !To do! remove AGS files. 
+	* Forward simulations of the qualitative models describing the dynamics of the shrew, noisy miner, and the black bear seen in Figure 5D. Note: in review we changed Figure 5D and 5E to be the same as Figure 4B and 4C. 
 * scaling_symmetry_6 folder 
 	* Code for simulating Model 6 with change of variables $\tilde{y}=-y$ seen in Figure 3C (bottom). 
