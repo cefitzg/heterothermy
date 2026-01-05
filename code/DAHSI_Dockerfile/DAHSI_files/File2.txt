@@ -1,0 +1,4 @@
+# Data names.
+datax
+# Data file names.extension
+ags_training.dat

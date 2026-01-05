@@ -1,0 +1,53 @@
+# Number of state variables, number of parameters, number of measured state variables, time step, number of time points. 
+2,20,1,0.1,2937
+# State variable names.
+x
+y
+# Parameter names.
+B101
+B102
+B103
+B104
+B105
+B106
+B107
+B108
+B109
+B110
+B201
+B202
+B203
+B204
+B205
+B206
+B207
+B208
+B209
+B210
+# Equations, in the same order as variables.
+B101+B102*x+B103*y+B104*x*x+B105*y*y+B106*x*x*x+B107*y*y*y+B108*x*y+B109*x*x*y+B110*x*y*y
+B201+B202*x+B203*y+B204*x*x+B205*y*y+B206*x*x*x+B207*y*y*y+B208*x*y+B209*x*x*y+B210*x*y*y
+# Upper and lower bounds for the the state variables search (min,max)
+0,1
+-10,10
+# Upper and lower bounds for the parameter search (min,max).
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10
+-10,10

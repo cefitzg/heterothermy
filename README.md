@@ -1,34 +1,35 @@
-# "Discovering universal temperature regulation dynamics in animals" https://arxiv.org/abs/2504.00359 code base
+# "Discovering universal temperature regulation dynamics in animals" https://arxiv.org/abs/2504.00359 codebase
 
-## ai_files
+## ai_files directory
 * contains .ai files (and pdf versions) of figures in the main text. 
 
-## fig1
+## fig1 directory
 * contains matlab scripts to reproduce panels in Figure 1 in the main text. 
 
-## fig2 
+## fig2 directory
 * contains matlab scripts to reproduce panels in Figure 2 in the main text.
 
-## fig3 
+## fig3 directory
 * contains matlab scripts to reproduce panels in Figure 3 in the main text.
 
-## fig4 
+## fig4 directory
 * contains matlab scripts to reproduce panels in Figure 4 in the main text.
 
-## fig5 
+## fig5 directory
 * contains matlab scripts to reproduce panels in Figure 5 in the main text.
 
-## supp_figs
+## supp_figs directory
 * contains matlab scripts to reproduce supplementary figures. 
 
-## code directory includes: 
+## code directory: 
 
-This project utilizes several, somewhat complicated bases written by myself, Andrew Engedal, and the authors of the paper: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714. The code is written in Python, Julia, Matlab, and some bash. 
+This project utilizes several, somewhat involved bases written by myself, Andrew Engedal, and the authors of the paper: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714. The code is written in Python, Julia, Matlab, and some bash. 
  
 * DAHSI_Dockerfile folder 
 	* Contains dockerized version of "DAHSI" sparse model selection algorithm, as described here: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714. The algorithm is written in Python. 
 	* Dockerfiles also hosted here: https://github.com/nuitrcs/quest_software_dockerfiles/tree/main/DAHSI.
-	* **!To do!** DAHSI_files subdirectory contains data and configuration scripts used during model selection. 
+	* DAHSI_files subdirectory contains data (ags_training.dat) and configuration scripts (File1.txt, File2.txt, File3.txt) used during model selection. 
+	* Helper_script subdirectory contains a helper script (combine.jl) we used to compile the model selection output (estimates for the states and parameters of the systems) on the HPC cluster. 
 * data_scaling folder 
 	* Matlab script used for scaling the training and validation data.  
 * identifiability_check folder 
@@ -41,4 +42,4 @@ This project utilizes several, somewhat complicated bases written by myself, And
 * scaling_symmetry_6 folder 
 	* Code for simulating Model 6 with change of variables $\tilde{y}=-y$ seen in Figure 3C (bottom). 
 * Project.toml 
-	**!To do!** julia dependencies.
+	**!To do!** Install needed Julia dependencies
