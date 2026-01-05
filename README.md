@@ -21,9 +21,14 @@
 ## supp_figs
 * contains matlab scripts to reproduce supplementary figures. 
 
-## code includes: 
+## code directory includes: 
 * data scaling script for training and validation, 
+	* something here. 
 * script to check the identifiability of model 10, 
+	* something here.
 * sample parameter estimation of Model 6, 
+	* something here.
 * forward simulations of the qualitative models, 
+	* something here.
 * code to generate the scaling symmetry. 
+	* something here.
