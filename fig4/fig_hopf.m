@@ -27,13 +27,13 @@ set(gca,'FontSize',fs)
 set(gcf,'units','pixels','outerposition',figpos,'windowstyle','normal')
 set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
-%ax=gca;
-%exportgraphics(ax,'h1.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'h1.tif','Resolution',1000) 
 
 figure(2)
-plot(x,0.2*(tanh(0.005*(x-3500)))+0.79,'LineWidth',7,'Color','#ffb000')
+plot(x,0.2*(tanh(0.005*(x-3500)))+0.79,'LineWidth',7,'Color','#FE6100')
 hold on 
-plot(x2,0.2*(1-tanh(0.005*(x2-20500)))+0.59,'LineWidth',7,'Color','#ffb000')
+plot(x2,0.2*(1-tanh(0.005*(x2-20500)))+0.59,'LineWidth',7,'Color','#FE6100')
 %set(gca,'FontSize',fs)
 %xlabel('time')
 %ylabel('$$\gamma(t)$$','interpreter','latex')
@@ -46,8 +46,8 @@ set(gca,'FontSize',fs)
 set(gcf,'units','pixels','outerposition',figpos,'windowstyle','normal')
 set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
-%ax=gca;
-%exportgraphics(ax,'h2.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'h2.tif','Resolution',1000) 
 
 %plot the dynamics here instead of in julia 
 
@@ -67,11 +67,11 @@ f=@(t,P)[omega*P(1).^2-P(1).^3-(0.2*(1-tanh(0.005*(t-8500)))+0.59)*(P(1).*P(2)-P
 [t2,sol2] = ode89(f,[0:0.01:12000],[sol(end,1),sol(end,2)]); %q3 case 
 
 figure(3)
-plot(1:length(sol),sol(:,1),'LineWidth',7,'Color','#648fff')
+plot(1:length(sol),sol(:,1),'LineWidth',3,'Color','#648FFF')
 hold on 
-plot(1:length(sol),sol(:,2),'LineWidth',7,'Color','#dc267f')
-plot(1+length(sol):2*length(sol),sol2(:,1),'LineWidth',7,'Color','#648fff')
-plot(1+length(sol):2*length(sol),sol2(:,2),'LineWidth',7,'Color','#dc267f')
+plot(1:length(sol),sol(:,2),'LineWidth',5,'LineStyle','-.','Color','#DC267F')
+plot(1+length(sol):2*length(sol),sol2(:,1),'LineWidth',3,'Color','#648FFF')
+plot(1+length(sol):2*length(sol),sol2(:,2),'LineWidth',5,'LineStyle','-.','Color','#DC267F')
 axis([0 2*length(sol) 0.0 1.05])
 xticks({})
 set(gca,'linewidth',6)
@@ -82,3 +82,43 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
 ax=gca;
 exportgraphics(ax,'h3.tif','Resolution',1000) 
+
+%extra plots for Figure 5 in revision 1: 
+figure(4)
+plot(x,0.2*(tanh(0.005*(x-3500)))+0.79,'LineWidth',7,'Color','#FE6100')
+hold on 
+plot(x2,0.2*(1-tanh(0.005*(x2-20500)))+0.59,'LineWidth',7,'Color','#FE6100')
+%set(gca,'FontSize',fs)
+%xlabel('time')
+%ylabel('$$\gamma(t)$$','interpreter','latex')
+%title('Circannual signal')
+xticks({})
+axis([0 24000 0.57 1.02])
+set(gca,'linewidth',6)
+set(gca,'fontname','helvetica')
+set(gca,'FontSize',fs)
+set(gcf,'units','pixels','outerposition',figpos,'windowstyle','normal')
+set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
+	'plotboxaspectratio',[1 1 1])
+%ax=gca;
+%exportgraphics(ax,'3O.tif','Resolution',1000) 
+
+figure(5)
+plot(1:length(sol),sol(:,1),'LineWidth',3,'Color','#648FFF')
+hold on 
+plot(1:length(sol),sol(:,2),'LineWidth',5,'LineStyle','-.','Color','#DC267F')
+plot(1+length(sol):2*length(sol),sol2(:,1),'LineWidth',3,'Color','#648FFF')
+plot(1+length(sol):2*length(sol),sol2(:,2),'LineWidth',5,'LineStyle','-.','Color','#DC267F')
+axis([0 2*length(sol) 0.0 1.05])
+xticks({})
+set(gca,'linewidth',6)
+set(gca,'fontname','helvetica')
+set(gca,'FontSize',fs)
+set(gcf,'units','pixels','outerposition',figpos,'windowstyle','normal')
+set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
+	'plotboxaspectratio',[1 1 1])
+%ax=gca;
+%exportgraphics(ax,'3I.tif','Resolution',1000) 
+
+
+

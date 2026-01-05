@@ -69,8 +69,8 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
-% ax=gca;
-% exportgraphics(ax,'3A.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'3A.tif','Resolution',1000) 
 
 % figure(2) {cannot release data set}
 % plot(1:length(shrew_data_1),shrew_data_1(:,2),'LineWidth',3,'Color','#648FFF')
@@ -120,8 +120,8 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
-% ax=gca;
-% exportgraphics(ax,'3D.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'3D.tif','Resolution',1000) 
 
 figure(5)
 plot(XR(:,1),XR(:,2),'LineWidth',2,'Color','#648FFF')
@@ -136,8 +136,8 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 axis([-3 42 -3 42])
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
-% ax=gca;
-% exportgraphics(ax,'3E.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'3E.tif','Resolution',1000) 
 
 
 
@@ -185,8 +185,8 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
-% ax=gca;
-% exportgraphics(ax,'3H.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'3H.tif','Resolution',1000) 
 
 
 figure(9)
@@ -207,8 +207,8 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 %axis([0 10000 0 1.1])
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
-% ax=gca;
-% exportgraphics(ax,'3I.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'3I.tif','Resolution',1000) 
 
 figure(10)
 plot(1:length(shrew_sim(1,1:1:end)),shrew_sim(1,1:1:end),'LineWidth',2,'Color','#648FFF')
@@ -226,8 +226,8 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
-% ax=gca;
-% exportgraphics(ax,'3J.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'3J.tif','Resolution',1000) 
 
 figure(11)
 plot(1:length(miner_sim(1,1:1:end)),miner_sim(1,1:1:end),'LineWidth',2,'Color','#648FFF')
@@ -245,8 +245,8 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
-% ax=gca;
-% exportgraphics(ax,'3K.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'3K.tif','Resolution',1000) 
 
 figure(12)
 plot(1:length(bear_sim(1,1:1:end)),bear_sim(1,1:1:end),'LineWidth',2,'Color','#648FFF')
@@ -264,8 +264,8 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
-% ax=gca;
-% exportgraphics(ax,'3L.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'3L.tif','Resolution',1000) 
 
 figure(13)
 t=0:0.1:10000;
@@ -280,8 +280,8 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 axis([0 10000 0 0.21])
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
-% ax=gca;
-% exportgraphics(ax,'3M.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'3M.tif','Resolution',1000) 
 
 
 figure(14)
@@ -299,8 +299,8 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 axis([0 10000 -0.1 1.1])
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
-% ax=gca;
-% exportgraphics(ax,'3N.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'3N.tif','Resolution',1000) 
 
 figure(15)
 t=0:0.1:10000;
@@ -315,6 +315,6 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 axis([0 10000 -1 1.1])
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
-% ax=gca;
-% exportgraphics(ax,'3O.tif','Resolution',1000) 
+ax=gca;
+exportgraphics(ax,'3O.tif','Resolution',1000) 
 
