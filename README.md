@@ -22,10 +22,11 @@
 * contains matlab scripts to reproduce supplementary figures. 
 
 ## code directory includes: 
-* Project.toml 
-	**!To do!** julia dependencies. 
+
+This project utilizes several, somewhat complicated bases written by myself, Andrew Engedal, and the authors of the paper: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714. The code is written in Python, Julia, Matlab, and some bash. 
+ 
 * DAHSI_Dockerfile folder 
-	* Contains dockerized version of "DAHSI" sparse model selection algorithm, as described here: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714.
+	* Contains dockerized version of "DAHSI" sparse model selection algorithm, as described here: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714. The algorithm is written in Python. 
 	* Dockerfiles also hosted here: https://github.com/nuitrcs/quest_software_dockerfiles/tree/main/DAHSI.
 	* **!To do!** DAHSI_files subdirectory contains data and configuration scripts used during model selection. 
 * data_scaling folder 
@@ -39,3 +40,5 @@
 	* Forward simulations of the qualitative models describing the dynamics of the shrew, noisy miner, and the black bear seen in Figure 5D. Note: in review we changed Figure 5D and 5E to be the same as Figure 4B and 4C. 
 * scaling_symmetry_6 folder 
 	* Code for simulating Model 6 with change of variables $\tilde{y}=-y$ seen in Figure 3C (bottom). 
+* Project.toml 
+	**!To do!** julia dependencies.
