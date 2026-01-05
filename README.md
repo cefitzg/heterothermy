@@ -23,17 +23,18 @@
 
 ## code directory includes: 
 * Project.toml 
-	!To do! julia dependencies. 
+	**!To do!** julia dependencies. 
 * DAHSI_Dockerfile folder 
 	* Contains dockerized version of "DAHSI" sparse model selection algorithm, as described here: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714.
 	* Dockerfiles also hosted here: https://github.com/nuitrcs/quest_software_dockerfiles/tree/main/DAHSI.
-	* !To do! DAHSI_files subdirectory contains data and configuration scripts used during model selection. 
+	* **!To do!** DAHSI_files subdirectory contains data and configuration scripts used during model selection. 
 * data_scaling folder 
 	* Matlab script used for scaling the training and validation data.  
 * identifiability_check folder 
 	* Julia script to check the identifiability of model 10. 
 * parameter_estimation_6 folder 
 	* sample parameter estimation of Model 6. 
+	* **!To do!** All julia scripts related to parameter estimation (forward simulation-based) are in the folder parameter_estimation_forward_simulation. These were original run on a Mac Studio XXX. 
 * qual_models folder 
 	* Forward simulations of the qualitative models describing the dynamics of the shrew, noisy miner, and the black bear seen in Figure 5D. Note: in review we changed Figure 5D and 5E to be the same as Figure 4B and 4C. 
 * scaling_symmetry_6 folder 
