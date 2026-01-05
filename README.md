@@ -22,13 +22,17 @@
 * contains matlab scripts to reproduce supplementary figures. 
 
 ## code directory includes: 
-* data scaling script for training and validation, 
-	* something here. 
-* script to check the identifiability of model 10, 
-	* something here.
-* sample parameter estimation of Model 6, 
-	* something here.
-* forward simulations of the qualitative models, 
-	* something here.
-* code to generate the scaling symmetry. 
-	* something here.
+* DAHSI_Dockerfile
+	* Contains dockerized version of "DAHSI" algorithm, as described here: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714.
+	* Dockerfiles also hosted here: https://github.com/nuitrcs/quest_software_dockerfiles/tree/main/DAHSI.
+	* !To do! DAHSI_files subdirectory contains data and configuration scripts used during model selection. 
+* data_scaling
+	* Matlab script used for scaling the training and validation data.  
+* identifiability_check
+	* Julia script to check the identifiability of model 10. 
+* parameter_estimation_6
+	* sample parameter estimation of Model 6. 
+* qual_models
+	* Forward simulations of the qualitative models describing the dynamics of the shrew, noisy miner, and the black bear seen in Figure 5D. Note: in review we changed the qualitative dynamics of the Arctic ground squirrel to be the same as Figure 4. !To do! remove AGS files. 
+* scaling_symmetry_6
+	* Code for simulating Model 6 with $\tilde{y}=y$ seen in Figure 3C (bottom). 
