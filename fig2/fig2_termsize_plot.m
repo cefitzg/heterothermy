@@ -61,5 +61,5 @@ set(gcf,'units','pixels','outerposition',figpos,'windowstyle','normal')
 set(gca,'units','normalized','position',[0.1 0.1 0.9 0.85], ...
 	'plotboxaspectratio',[1 1 1])
 set(temp, 'FontName', 'Helvetica')
-%ax=gca;
-%exportgraphics(ax,'termsize.tif','Resolution',1000)
+ax=gca;
+exportgraphics(ax,'termsize.tif','Resolution',1000)

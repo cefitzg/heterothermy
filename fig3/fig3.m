@@ -147,7 +147,7 @@ set(gcf,'units','pixels','outerposition',figpos_small,'windowstyle','normal')
 set(gca,'units','normalized','position',[0.1 0.2 0.9 0.8], ...
 	'plotboxaspectratio',[1 0.5 1])
 ax=gca;
-exportgraphics(ax,'1A.tif','Resolution',1000) 
+%exportgraphics(ax,'1A.tif','Resolution',1000) 
 
 
 figure(2)
@@ -169,7 +169,7 @@ set(gcf,'units','pixels','outerposition',figpos_small,'windowstyle','normal')
 set(gca,'units','normalized','position',[0.1 0.2 0.9 0.8], ...
 	'plotboxaspectratio',[1 0.5 1])
 ax=gca;
-exportgraphics(ax,'1AA.tif','Resolution',1000) 
+%exportgraphics(ax,'1AA.tif','Resolution',1000) 
 
 
 figure(3)
@@ -190,7 +190,7 @@ set(gcf,'units','pixels','outerposition',figpos_small,'windowstyle','normal')
 set(gca,'units','normalized','position',[0.1 0.1 0.9 0.8], ...
 	'plotboxaspectratio',[1 0.5 1])
 ax=gca;
-exportgraphics(ax,'1AAA.tif','Resolution',1000) 
+%exportgraphics(ax,'1AAA.tif','Resolution',1000) 
 
 figure(4)
 plot(0:0.1:293.6,fit_6A(1,:),'Color','#648FFF','LineWidth',7)
@@ -222,7 +222,7 @@ set(gcf,'units','pixels','outerposition',figpos,'windowstyle','normal')
 set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
 ax=gca;
-exportgraphics(ax,'2A.tif','Resolution',1000) 
+%exportgraphics(ax,'2A.tif','Resolution',1000) 
 
 
 figure(5)
@@ -256,7 +256,7 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
 ax=gca;
-exportgraphics(ax,'2AA.tif','Resolution',1000) 
+%exportgraphics(ax,'2AA.tif','Resolution',1000) 
 
 
 figure(6)
@@ -274,8 +274,8 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
 set(gca,'linewidth',6)
 set(gca,'fontname','helvetica')
-ax=gca;
-exportgraphics(ax,'2B.tif','Resolution',1000) 
+%ax=gca;
+%exportgraphics(ax,'2B.tif','Resolution',1000) 
 
 figure(7)
 plot(0:0.1:293.6,fit_sym1(1,:),'Color','#648FFF','LineWidth',7)
@@ -293,7 +293,7 @@ set(gcf,'units','pixels','outerposition',figpos,'windowstyle','normal')
 set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 	'plotboxaspectratio',[1 1 1])
 ax=gca;
-exportgraphics(ax,'2E.tif','Resolution',1000) 
+%exportgraphics(ax,'2E.tif','Resolution',1000) 
 
 
 
