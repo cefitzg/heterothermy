@@ -188,27 +188,8 @@ set(gca,'fontname','helvetica')
 % ax=gca;
 % exportgraphics(ax,'3H.tif','Resolution',1000) 
 
-
-% figure(9)
-% plot(1:length(ags_sim(1,:)),ags_sim(1,:),'LineWidth',3,'Color','#648FFF')
-% hold on 
-% plot(1:length(ags_sim(2,:)),ags_sim(2,:),'LineWidth',5,'LineStyle','-.','Color','#DC267F')
-% %xlabel('Nondim. Time')
-% set(gca,'XTick',[]);
-% %title('(I) AGS sim.')
-% xlim([0 length(ags_sim)])
-% ylim([0 1.05])
-% set(gca,'xtick',[])
-% %ylabel('Nondim. T_b ({\circ}C)')
-% set(gca,'FontSize',fs)
-% set(gcf,'units','pixels','outerposition',figpos,'windowstyle','normal')
-% set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
-% 	'plotboxaspectratio',[1 1 1])
-% %axis([0 10000 0 1.1])
-% set(gca,'linewidth',6)
-% set(gca,'fontname','helvetica')
-% % ax=gca;
-% % exportgraphics(ax,'3I.tif','Resolution',1000) 
+%note that: the first column D and E are now pulled from Figure 4. See Fig4
+%code folder. 
 
 figure(10)
 plot(1:length(shrew_sim(1,1:1:end)),shrew_sim(1,1:1:end),'LineWidth',2,'Color','#648FFF')
@@ -302,19 +283,5 @@ set(gca,'fontname','helvetica')
 % ax=gca;
 % exportgraphics(ax,'3N.tif','Resolution',1000) 
 
-% figure(15)
-% t=0:0.1:10000;
-% plot(t,zeros(1,length(t)),'LineWidth',5,'Color','#FE6100')
-% %xlabel('Nondim. Time')
-% %title('(O) circannual signal')
-% set(gca,'XTick',[]);
-% set(gca,'FontSize',fs)
-% set(gcf,'units','pixels','outerposition',figpos,'windowstyle','normal')
-% set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
-% 	'plotboxaspectratio',[1 1 1])
-% axis([0 10000 -1 1.1])
-% set(gca,'linewidth',6)
-% set(gca,'fontname','helvetica')
-% % ax=gca;
-% % exportgraphics(ax,'3O.tif','Resolution',1000) 
+
 

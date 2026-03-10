@@ -83,7 +83,7 @@ set(gca,'units','normalized','position',[0.1 0.1 0.9 0.9], ...
 ax=gca;
 exportgraphics(ax,'h3.tif','Resolution',1000) 
 
-%extra plots for Figure 5 in revision 1: 
+%extra plots for Figure 5 in revision 1 (same as above)
 figure(4)
 plot(x,0.2*(tanh(0.005*(x-3500)))+0.79,'LineWidth',7,'Color','#FE6100')
 hold on 
