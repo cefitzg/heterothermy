@@ -57,9 +57,9 @@ Pkg.instantiate()
 Then run from the terminal: 
 
 ```
-julia --project=. {script_name.jl}
+julia --project=. script_name.jl
 ```
-For the bash script code/parameter_estimation_6/parameter_estimation_forward_simulation/run_jobs.sh, one could attempt to include: 
+For the script at code/parameter_estimation_6/parameter_estimation_forward_simulation/run_jobs.sh, one could include: 
 
 ```bash
 #!/bin/bash
@@ -74,16 +74,20 @@ at the top of the bash script and
 unset JULIA_PROJECT
 ```
 
-at the bottom of the script to avoid activating and instantiating the requirements in each of the 16 julia scripts. 
+at the bottom of the script to avoid including 
+
+```julia
+using Pkg;
+Pkg.activate(@__DIR__);
+Pkg.instantiate()
+```
+in each of the 16 julia scripts. 
 
 MATLAB version 2023B was used for all MATLAB-based calculations. 
 
 The model selection algorithm was run on Quest high performance computing facility at Northwestern University
 
 <!---
-* Chaetev_Theorem_Calculation 
-	* **!To do!**
-* Private REPO for Figure 5, as some of the data cannot be released. 
-* Test all code on several machines. 
+* I maintain a Private REPO for Figure 5, as some of the data (shrew and miner) cannot be released. 
 --->
 
