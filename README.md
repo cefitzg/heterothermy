@@ -23,7 +23,7 @@
 * supp_figs directory
 	* contains matlab scripts to reproduce supplementary figures. 
 
-## code directory: 
+## Code Directory: 
 
 This project utilizes several, somewhat involved bases written by myself, Andrew Engedal, and the authors of the paper: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714. The code is written in Python, Julia, Matlab, and some bash. 
  
