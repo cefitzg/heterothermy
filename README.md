@@ -54,6 +54,11 @@ using Pkg;
 Pkg.activate(@__DIR__);
 Pkg.instantiate()
 ```
+Then run from the terminal: 
+
+```
+julia --project=. {script_name.jl}
+```
 
 MATLAB version 2023B was used for all MATLAB-based calculations. 
 
