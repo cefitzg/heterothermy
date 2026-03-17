@@ -1,6 +1,6 @@
 # Discovering a low-dimensional temperature control architecture across animals https://arxiv.org/abs/2504.00359 codebase
 
-## Directories:
+## Figure Directories:
 
 * ai_files directory
 	* contains .ai files (and pdf versions) of figures in the main text. 
@@ -23,7 +23,7 @@
 * supp_figs directory
 	* contains matlab scripts to reproduce supplementary figures. 
 
-* code directory: 
+## code directory: 
 
 This project utilizes several, somewhat involved bases written by myself, Andrew Engedal, and the authors of the paper: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714. The code is written in Python, Julia, Matlab, and some bash. 
  
