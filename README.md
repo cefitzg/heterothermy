@@ -31,13 +31,13 @@ This project utilizes several, somewhat involved bases written by myself, Andrew
 	* Contains dockerized version of "DAHSI" sparse model selection algorithm, as described here: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714. The algorithm is written in Python. 
 	* Dockerfiles also hosted here: https://github.com/nuitrcs/quest_software_dockerfiles/tree/main/DAHSI.
 	* DAHSI_files subdirectory contains data (ags_training.dat), configuration scripts (File1.txt, File2.txt, File3.txt) for the model selection algorithm, and bash submission script (sub.sh). 
-	* Helper_script subdirectory contains a helper script (combine.jl) we used to compile the model selection output (estimates for the states and parameters of the systems) on the HPC cluster. TO DO: add exact Project.toml from QUEST Supercomputer. 
+	* Helper_script subdirectory contains a helper script (combine.jl) we used to compile the model selection output (estimates for the states and parameters of the systems) on the HPC cluster. 
 * data_scaling folder {Run on locally on a 2021 Macbook Pro} 
 	* Matlab script used for scaling the training and validation data.  
 * identifiability_check folder {Run on locally on a 2021 Macbook Pro} 
 	* Julia script to check the identifiability of model 10. Project.toml included. 
 * parameter_estimation_6 folder {Run on locally on MacStudio with 24 coures} 
-	* sample parameter estimation of Model 6. All julia scripts related to parameter estimation across the 16 models considered (forward simulation-based) are in the folder parameter_estimation_forward_simulation. A Project.toml file is included for the Julia dependencies. Julia version 1.10.4 was used. Originally, this calculation was run on a Mac Studio with 24 cores. 
+	* sample parameter estimation of Model 6. All julia scripts related to parameter estimation across the 16 models considered (forward simulation-based) are in the folder parameter_estimation_forward_simulation. 
 * qual_models folder {Run on locally on a 2021 Macbook Pro} 
 	* Forward simulations of the qualitative models describing the dynamics of the shrew, noisy miner, and the black bear seen in Figure 5D. Note: in review we changed Figure 5D and 5E to be the same as Figure 4B and 4C. Project.toml included. 
 * scaling_symmetry_6 folder {Run on locally on a 2021 Macbook Pro} 
