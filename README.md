@@ -47,7 +47,7 @@ This project utilizes several, somewhat involved bases written by myself, Andrew
 
 ## Computational requirements and computing notes. 
 
-Julia version 1.10.4 was used for this project in the code subdirectory. A Project.toml file is included for the necessary Julia dependencies in each folder. The code was run with the requirements globally installed. To activate a local environment using a Project.toml file, include the following code at the top any julia script you want to run: 
+Julia version 1.10.4 was used for this project in the code subdirectory (see juliaup to get 1.10.4 https://github.com/JuliaLang/juliaup). A Project.toml file is included for the necessary Julia dependencies in each folder. The code was run with the requirements globally installed. To re-run code without globally installing the dependencies, activate a local environment using a Project.toml file, include the following code at the top any julia script you want to run: 
 
 ```julia
 using Pkg;
@@ -59,6 +59,7 @@ Then run from the terminal:
 ```
 julia --project=. {script_name.jl}
 ```
+
 
 MATLAB version 2023B was used for all MATLAB-based calculations. 
 
