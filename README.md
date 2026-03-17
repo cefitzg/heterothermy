@@ -81,9 +81,11 @@ using Pkg;
 Pkg.activate(@__DIR__);
 Pkg.instantiate()
 ```
-in each of the 16 julia scripts. 
+in each of the 16 julia files. 
 
 MATLAB version 2023B was used for all MATLAB-based calculations. 
+
+Maple version 2022.0 was used for all Maple-based calculations. 
 
 The model selection algorithm was run on Quest high performance computing facility at Northwestern University
 
