@@ -1,27 +1,29 @@
-# "Discovering universal temperature regulation dynamics in animals" https://arxiv.org/abs/2504.00359 codebase
+# Discovering a low-dimensional temperature control architecture across animals https://arxiv.org/abs/2504.00359 codebase
 
-## ai_files directory
-* contains .ai files (and pdf versions) of figures in the main text. 
+## Directories:
 
-## fig1 directory
-* contains matlab scripts to reproduce panels in Figure 1 in the main text. 
+* ai_files directory
+	* contains .ai files (and pdf versions) of figures in the main text. 
 
-## fig2 directory
-* contains matlab scripts to reproduce panels in Figure 2 in the main text.
+* fig1 directory
+	* contains matlab scripts to reproduce panels in Figure 1 in the main text. 
 
-## fig3 directory
-* contains matlab scripts to reproduce panels in Figure 3 in the main text.
+* fig2 directory
+	* contains matlab scripts to reproduce panels in Figure 2 in the main text.
 
-## fig4 directory
-* contains matlab scripts to reproduce panels in Figure 4 in the main text.
+* fig3 directory
+	* contains matlab scripts to reproduce panels in Figure 3 in the main text.
 
-## fig5 directory
-* contains matlab scripts to reproduce panels in Figure 5 in the main text.
+* fig4 directory
+	* contains matlab scripts to reproduce panels in Figure 4 in the main text.
 
-## supp_figs directory
-* contains matlab scripts to reproduce supplementary figures. 
+* fig5 directory
+	* contains matlab scripts to reproduce panels in Figure 5 in the main text.
 
-## code directory: 
+* supp_figs directory
+	* contains matlab scripts to reproduce supplementary figures. 
+
+* code directory: 
 
 This project utilizes several, somewhat involved bases written by myself, Andrew Engedal, and the authors of the paper: https://pubs.aip.org/aip/cha/article/32/6/063101/2835714. The code is written in Python, Julia, Matlab, and some bash. 
  
