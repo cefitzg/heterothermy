@@ -133,7 +133,7 @@ hold on
 plot(1,aic_val_td(1),'o','MarkerFaceColor','#648FFF','MarkerEdgeColor','#648FFF','MarkerSize',30)
 plot(12,aic_val_td(12),'o','MarkerFaceColor','#FE6100','MarkerEdgeColor','#FE6100','MarkerSize',30)
 yline(aic_val_td(1)+3,'LineWidth',4,'LineStyle',':')
-yline(aic_val_td(1)-3,'LineWidth',4,'LineStyle',':')
+%yline(aic_val_td(1)-3,'LineWidth',4,'LineStyle',':')
 set(gca,'FontSize',fs)
 set(gca, 'XTickLabel', [])
 set(gca,'linewidth',6)
@@ -147,7 +147,7 @@ set(gcf,'units','pixels','outerposition',figpos_small,'windowstyle','normal')
 set(gca,'units','normalized','position',[0.1 0.2 0.9 0.8], ...
 	'plotboxaspectratio',[1 0.5 1])
 ax=gca;
-%exportgraphics(ax,'1A.tif','Resolution',1000) 
+exportgraphics(ax,'1A.tif','Resolution',1000) 
 
 
 figure(2)
