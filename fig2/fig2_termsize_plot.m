@@ -6,7 +6,7 @@ close all
 
 %figure settings
 figpos = [100 100 1000 800]; %figure position
-fs=32; %font size
+fs=64; %font size
 
 sim_data = readmatrix("8AB_fit.csv"); %forward simulation of 8AB 
 opt_parameters_8AB = readmatrix("8AB_info.csv"); %all optimized parameters 
